@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <div class="list-header"></div>
+            <div class="list-main">
+                <h1 class="list-title">To-Do list</h1>
+                <div class="container-sort">
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" class="icon sort" id="sorting">
+                        <rect x="2.5" width="2.5" height="12.5" fill="#C4C4C4"/>
+                        <rect x="10" y="3.75" width="2.5" height="7.5" transform="rotate(-90 10 3.75)" fill="#C4C4C4"/>
+                        <rect x="10" y="8.75" width="2.5" height="10" transform="rotate(-90 10 8.75)" fill="#C4C4C4"/>
+                        <rect x="10" y="13.75" width="2.5" height="15" transform="rotate(-90 10 13.75)" fill="#C4C4C4"/>
+                        <path d="M3.75 15L0.502405 10.3125L6.9976 10.3125L3.75 15Z" fill="#C4C4C4"/>
+                    </svg>
+                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" class="icon sort hiddenIcon" id="descSorting">
+                        <rect x="5" y="15" width="2.5" height="12.5" transform="rotate(-180 5 15)" fill="#C4C4C4" />
+                        <rect x="10" y="3.75" width="2.5" height="7.5" transform="rotate(-90 10 3.75)" fill="#C4C4C4" />
+                        <rect x="10" y="8.75" width="2.5" height="10" transform="rotate(-90 10 8.75)" fill="#C4C4C4" />
+                        <rect x="10" y="13.75" width="2.5" height="15" transform="rotate(-90 10 13.75)" fill="#C4C4C4" />
+                        <path d="M3.75 6.55671e-07L6.99759 4.6875L0.502404 4.6875L3.75 6.55671e-07Z" fill="#C4C4C4" />
+                    </svg>
+                </div>
+                <div id="the-list">
+                </div>
+                <a class="btn" id="addBtn">
+                    <span class="plus">+</span>
+                    Добавить
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

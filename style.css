@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.list {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 336px;
+}
+.list-header {
+  background-color: #ffdc40;
+  border-radius: 9px 9px 0 0;
+  height: 28px;
+  width: 100%;
+}
+.list-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.lisе-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 13px;
+  text-align: center;
+}
+.container-sort {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 270px;
+}
+.icon.sort {
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+.input {
+  border: none;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+#the-list {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+}
+.the-list-li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  height: 40px;
+  width: 286px;
+}
+.cross svg {
+  cursor: pointer;
+}
+.btn {
+  background-color: #833ae0;
+  border: none;
+  border-radius: 71px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 18px 0 19px 0;
+  padding: 13px 32px 13px 53px;
+  position: relative;
+  height: 42px;
+  width: 150px;
+}
+.btn .plus {
+  background-color: #9953f1;
+  border-radius: 71px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 42px;
+  width: 42px;
+}
+
+/* hover */
+.icon.sort:hover rect,
+.icon.sort:hover path {
+  fill: black;
+}
+.icon.cross:hover rect {
+  stroke: #833ae0;
+  fill: #833ae0;
+}
+.icon.cross:hover path {
+  stroke: #fff;
+}
+
+/* hidden */
+.hiddenIcon {
+  display: none;
+}
